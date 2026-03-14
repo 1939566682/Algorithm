@@ -1,4 +1,4 @@
-package chapter01_intro;
+package com.luoyu.algorithm.course.chapter01_入门与基础篇;
 
 import java.util.Arrays;
 import java.util.Random;

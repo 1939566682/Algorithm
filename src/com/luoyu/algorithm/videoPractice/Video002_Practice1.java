@@ -16,7 +16,7 @@ import java.util.Random;
 // 这100人的社会财富分布很均匀吗?
 // 基尼系数的计算
 // 差值总和 除以 2 * 人数 * 财富总和
-public class Video002_Practice {
+public class Video002_Practice1 {
     static Random r = new Random();
 
     public static void main(String[] args) {

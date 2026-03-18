@@ -40,7 +40,7 @@ class Video005_Validator {
     // 为了验证
     // 得到一个随机数组，长度是n
     // 数组中每个数，都在1~v之间，随机得到
-    public static int[] randomArray(int n, int v) {
+    private static int[] randomArray(int n, int v) {
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             // Math.random() -> double -> [0,1)范围山的一个小数，0.37463473126、0.001231231，等概率！
@@ -53,7 +53,7 @@ class Video005_Validator {
     }
 
     // 为了验证
-    public static int[] copyArray(int[] arr) {
+    private static int[] copyArray(int[] arr) {
         int n = arr.length;
         int[] ans = new int[n];
         for (int i = 0; i < n; i++) {
@@ -63,7 +63,7 @@ class Video005_Validator {
     }
 
     // 为了验证
-    public static boolean sameArray(int[] arr1, int[] arr2) {
+    private static boolean sameArray(int[] arr1, int[] arr2) {
         int n = arr1.length;
         for (int i = 0; i < n; i++) {
             if (arr1[i] != arr2[i]) {
@@ -74,14 +74,14 @@ class Video005_Validator {
     }
 
     // 数组中交换i和j位置的数
-    public static void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
     }
 
     // 选择排序
-    public static void selectionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
@@ -97,7 +97,7 @@ class Video005_Validator {
     }
 
     // 冒泡排序
-    public static void bubbleSort(int[] arr) {
+    private static void bubbleSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
@@ -111,7 +111,7 @@ class Video005_Validator {
     }
 
     // 插入排序
-    public static void insertionSort(int[] arr) {
+    private static void insertionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }

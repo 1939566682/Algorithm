@@ -79,16 +79,23 @@ public class Video007_ListReverse {
 
     // 反转单链表测试链接 : https://leetcode.cn/problems/reverse-linked-list/
     class Solution {
-
         public static ListNode reverseList(ListNode head) {
+            // 初始化前驱节点为 null（反转后第一个节点的 next 要指向 null）
             ListNode pre = null;
+            // 声明临时变量，用于保存当前节点的下一个节点
             ListNode next = null;
+            // 遍历链表，直到处理完所有节点（head 为 null 时结束）
             while (head != null) {
+                // 关键：先保存当前节点的下一个节点，否则修改 head.next 后会丢失后续链表
                 next = head.next;
+                // 核心操作：反转指针，让当前节点指向它的前驱节点
                 head.next = pre;
+                // 前驱节点 “后移”，更新为当前节点（为下一个节点的反转做准备）
                 pre = head;
+                // 当前节点 “后移”，处理之前保存的下一个节点
                 head = next;
             }
+            // 遍历结束后，pre 指向原链表的最后一个节点（即反转后的头节点）
             return pre;
         }
 

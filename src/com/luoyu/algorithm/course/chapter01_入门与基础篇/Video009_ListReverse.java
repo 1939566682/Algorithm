@@ -8,7 +8,7 @@ package com.luoyu.algorithm.course.chapter01_入门与基础篇;
 // 按值传递、按引用传递
 // 从堆栈角度解释链表节点
 // 以堆栈视角来看链表反转
-public class Video007_ListReverse {
+public class Video009_ListReverse {
     public static void main(String[] args) {
         // int、long、byte、short
         // char、float、double、boolean

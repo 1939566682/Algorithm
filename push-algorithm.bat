@@ -6,17 +6,17 @@ set LANG=zh_CN.UTF-8
 cd /d E:\Idea_workscope\Algorithm
 
 :: 拉取远程最新代码
-git pull Algorithm-Gitee main
-git pull Algorithm-GitHub main
+git pull Algorithm-Gitee com.main
+git pull Algorithm-GitHub com.main
 
 :: 交互式输入提交信息（英文提示无乱码）
-set /p commit_msg=Please enter commit message for algorithm project: 
+set /p commit_msg=Please enter commit message for com.luoyu.algorithm project:
 
 :: 提交+推送核心逻辑
 git add .
 git commit -m "%commit_msg%"
-git push Algorithm-Gitee main
-git push Algorithm-GitHub main
+git push Algorithm-Gitee com.main
+git push Algorithm-GitHub com.main
 
 :: 执行结果提示
 echo.
